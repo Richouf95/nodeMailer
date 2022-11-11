@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NodeMailer</title>
+    <style>
+        #conteneur {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #form {
+            background: rgba(21, 137, 176, 0.438);
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 3em;
+            width: 700px;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <div>
+            <div>
+                <h1>Remplissez le formulaire et vous recevrais un mail de notre part !</h1>
+            </div>
+            <div id="form">
+                <form method="get" action="/emailvalidate">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required> <br> <br>
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required> <br> <br>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prenom" required> <br> <br>
+                    <input type="submit" value="Soumettre">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
